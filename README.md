@@ -1,1 +1,1 @@
-# notes
+The Notes repo contains the codes, tip, and tricks that I use every day at work. These notes have been accumulated since 2016 when started work as a data scientist at General Electric. I have tried to create sections for the type of notes. Hopefully, these do not become too complex with time. 
