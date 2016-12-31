@@ -40,3 +40,32 @@ Out[14]:
 Here `we assumed that the starting date was 09/20/2016`. I asked this question on [stackoverflow](http://stackoverflow.com/questions/39713381/convert-range-to-timestamp-in-pandas) 
 
 ## python
+
+### Convert human readable time to unix timestamp
+
+```{py}
+import datetime
+def input_time(start_time, stop_time):
+    """Converts human readable time into unix timestamp
+    Example
+    --------
+        >>> start = '2016-11-23 00:00:00'
+        >>> stop = '2016-11-24 00:00:00'
+
+        >>> start_time, stop_time = input_time(start, stop)
+    """
+    t1 = datetime.datetime.strptime(start_time, "%Y-%m-%d %H:%M:%S")
+    t2 = datetime.datetime.strptime(stop_time, "%Y-%m-%d %H:%M:%S")
+    start = (t1 - datetime.datetime(1970, 1, 1)).total_seconds()
+    end = (t2 - datetime.datetime(1970, 1, 1)).total_seconds()
+
+    return int(start * 1000), int(end * 1000)
+```
+
+### Convert unix timestamp to human readable time
+
+```{py}
+import datetime
+d1 = datetime.datetime.utcfromtimestamp(round(int(t1 / 1000.))).strftime('%Y-%m-%d %H:%M:%S')
+```
+where t1 is the time in unix. 
