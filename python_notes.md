@@ -68,4 +68,11 @@ def input_time(start_time, stop_time):
 import datetime
 d1 = datetime.datetime.utcfromtimestamp(round(int(t1 / 1000.))).strftime('%Y-%m-%d %H:%M:%S')
 ```
-where t1 is the time in unix. 
+where t1 is the time in unix. For example,
+
+```{py}
+In [23]: t1 = 1479859200000
+
+In [24]: datetime.datetime.utcfromtimestamp(round(int(t1 / 1000.))).strftime('%Y-%m-%d %H:%M:%S')
+Out[24]: '2016-11-23 00:00:00'
+```
