@@ -35,4 +35,4 @@ Out[14]:
 4 2016-09-20 00:00:00.040   494
 ```
 
-Here `we assumed that the starting date was 09/20/2016`.  
+Here `we assumed that the starting date was 09/20/2016`. I asked this question on [stackoverflow](http://stackoverflow.com/questions/39713381/convert-range-to-timestamp-in-pandas) 
