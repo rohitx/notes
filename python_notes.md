@@ -5,7 +5,9 @@ These notes are collections of questions I have asked and answers I have found o
 The notes are divided into two groups: pandas and python. 
 
 
-## Convert range to timestamp in Pandas
+## pandas
+
+### Convert range to timestamp in Pandas
 
 Suppose I have the following: 
 
@@ -36,3 +38,5 @@ Out[14]:
 ```
 
 Here `we assumed that the starting date was 09/20/2016`. I asked this question on [stackoverflow](http://stackoverflow.com/questions/39713381/convert-range-to-timestamp-in-pandas) 
+
+## python
